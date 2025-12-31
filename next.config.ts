@@ -1,13 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  devIndicators: {
-    // We cast to 'any' to bypass the strict "position only" type check
-    buildActivity: false,
-  } as any,
   experimental: {
-    vercelToolbar: false,
-  } as any,
+    // serverComponentsExternalPackages should be here if needed
+    serverComponentsExternalPackages: ['@prisma/client'],
+  },
 };
 
 export default nextConfig;
