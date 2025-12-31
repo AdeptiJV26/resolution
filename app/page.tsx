@@ -23,7 +23,8 @@ export default async function Home(props: {
       <main className="relative p-4 md:p-8 font-sans">
         {/* ... rest of your code (H1, Form, Board) remains the same ... */}
         <div className="max-w-2xl mx-auto text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white italic drop-shadow-lg">
+          <h1 className="upparcase text-white font-bold text-6xl"><span className="text-red-700">Happy</span> <span className="text-green-700">New</span> <span className="text-blue-700">Year!</span></h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mt-2 italic drop-shadow-lg">
             {showBoard ? "The Resolution Board" : "New Year Resolution 2026"}
           </h1>
         </div>
